@@ -1,0 +1,20 @@
+/* Activate smooth scroll */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Disallow selecting most elements */
+body {
+	user-select: none;
+}
+
+/* Allow selecting specific elements */
+input:not([type='button']),
+textarea {
+	user-select: auto;
+}
+
+/* Disallow dragging images */
+img {
+	pointer-events: none;
+}

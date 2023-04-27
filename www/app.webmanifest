@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
+	"name": "Web App Starter Project",
+	"short_name": "WASP",
+	"lang": "en-US",
+	"theme_color": "#7CB9E8",
+	"background_color": "#000000",
+	"display": "standalone",
+	"orientation": "landscape",
+	"categories": ["game"],
+	"scope": ".",
+	"start_url": "index.html"
+}

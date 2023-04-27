@@ -1,0 +1,28 @@
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+@import './components/_ios.css';
+@import './components/_vibes.css';
+
+.output {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.seconds {
+	display: inline-block;
+	padding: 0.2em;
+	font-size: 6rem;
+}
+
+/* Light mode */
+body {
+	background-color: white;
+	color: black;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+}

@@ -1,0 +1,65 @@
+name: Build Desktop
+on: workflow_dispatch
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      - name: Install JS dependencies
+        run: yarn
+
+      - name: (Windows) Add code signing certificate
+        continue-on-error: true
+        if: matrix.os == 'windows-latest'
+        env:
+          GH_TOKEN: ${{ secrets.github_token }}
+          WINDOWS_CERTIFICATE: ${{ secrets.CSC_LINK }}
+        run: |
+          New-Item -ItemType directory -Path certificate
+          Set-Content -Path certificate/tempCert.txt -Value $env:WINDOWS_CERTIFICATE
+          certutil -decode certificate/tempCert.txt certificate/certificate.pfx
+          Remove-Item -path certificate -include tempCert.txt
+
+      - name: (Windows) Build Electron app
+        if: matrix.os == 'windows-latest'
+        run: yarn build:desktop
+        env:
+          GH_TOKEN: ${{ secrets.github_token }}
+          CSC_LINK: 'certificate/certificate.pfx'
+          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
+
+      - name: (Mac/Linux) Build Electron app
+        if: matrix.os != 'windows-latest'
+        run: yarn build:desktop
+        env:
+          GH_TOKEN: ${{ secrets.github_token }}
+
+      - name: Upload release app
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release
+          path: |
+            dist/electron/**/*
+          retention-days: 1

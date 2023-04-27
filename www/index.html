@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Web App Starter Project</title>
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self';style-src 'self' 'unsafe-inline';img-src 'self' data: blob:;worker-src 'self' blob:"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 minimum-scale=1.0, user-scalable=no"
+		/>
+
+		<!-- Progressive Web App -->
+		<meta name="theme-color" content="#7CB9E8" />
+		<link rel="manifest" href="app.webmanifest" />
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes" />
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+
+		<link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
+	</head>
+
+	<body>
+		<div class="output">
+			Running for <span class="seconds" id="num">0</span> Seconds
+		</div>
+		<script src="assets/scripts/app.js" async="async"></script>
+	</body>
+</html>

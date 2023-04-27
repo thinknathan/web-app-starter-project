@@ -1,0 +1,71 @@
+name: Build Android
+on: workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
+
+      - name: Install JS dependencies
+        run: yarn
+
+      - name: Setup Android project
+        continue-on-error: true
+        run: npx --no cap add android
+
+      - name: Build JS app
+        run: yarn build:mobile
+
+      - name: Update Android dependencies
+        run: npx cap sync
+
+      - name: Extract Android signing key from env
+        run: |
+          echo "${{ secrets.RELEASE_KEYSTORE }}" > android/release.jks.base64
+          base64 -d android/release.jks.base64 > android/release.decrypted.jks
+
+      - name: Make Gradle executable
+        run: chmod +x ./android/gradlew
+
+      - name: Build and sign Android app
+        run: npx cap build android --keystorepath release.decrypted.jks --keystorepass ${{ secrets.RELEASE_KEYSTORE_PASSWORD }} --keystorealias ${{ secrets.RELEASE_KEYSTORE_ALIAS }} --keystorealiaspass ${{ secrets.RELEASE_KEYSTORE_ALIAS_PASSWORD }}
+
+      - name: Create APK from AAB
+        id: convert_aab
+        uses: mukeshsolanki/bundletool-action@v1.0.1
+        with:
+          aabFile: android/app/build/outputs/bundle/release/app-release.aab
+          base64Keystore: ${{ secrets.RELEASE_KEYSTORE }}
+          keystorePassword: ${{ secrets.RELEASE_KEYSTORE_PASSWORD }}
+          keystoreAlias: ${{ secrets.RELEASE_KEYSTORE_ALIAS }}
+          keyPassword: ${{ secrets.RELEASE_KEYSTORE_ALIAS_PASSWORD }}
+
+      - name: Upload release APK/AAB
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release
+          path: |
+            android/app/build/outputs/bundle/release/*.aab
+            ${{ steps.convert_aab.outputs.apkPath }}
+          retention-days: 1
