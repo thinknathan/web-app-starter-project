@@ -1,17 +1,20 @@
 interface Window {
-	electron: {
-		versions: {
-			chrome: string;
-			node: string;
-			electron: string;
+	readonly electron: {
+		readonly versions: {
+			readonly chrome: string;
+			readonly node: string;
+			readonly electron: string;
 		};
 
-		store: {
-			getItem: (key: string) => Promise<{ data: string | null }>;
-			setItem: (key: string, val: string) => Promise<{ success: boolean }>;
-			hasItem: (key: string) => Promise<{ exists: boolean }>;
-			removeItem: (key: string) => Promise<{ success: boolean }>;
-			clearItems: () => Promise<{ success: boolean }>;
+		readonly store: {
+			readonly getItem: (key: string) => Promise<{ data: string | null }>;
+			readonly setItem: (
+				key: string,
+				val: string
+			) => Promise<{ success: boolean }>;
+			readonly hasItem: (key: string) => Promise<{ exists: boolean }>;
+			readonly removeItem: (key: string) => Promise<{ success: boolean }>;
+			readonly clearItems: () => Promise<{ success: boolean }>;
 		};
 	};
 }

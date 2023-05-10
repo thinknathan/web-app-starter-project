@@ -39,10 +39,10 @@ export const createStorage = (settings: {
 		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		async (event, key: string): Promise<{ data: string | null }> => {
 			// Retrieve the data.
-			const dataString = store.get(key) as string;
+			const dataString = store.get(key);
 
 			// If there is no data, return null.
-			if (!dataString) {
+			if (!(dataString && typeof dataString === 'string')) {
 				return { data: null };
 			}
 

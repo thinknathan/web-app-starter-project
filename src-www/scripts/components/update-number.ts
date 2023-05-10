@@ -28,7 +28,7 @@ export const updateNumber = () => {
 	// Run update every 1 second
 	setInterval(async () => {
 		// Get value from IndexedDB or set to 0
-		const previous: number = ((await store.getItem(key)) as number) ?? 0;
+		const previous: number = Number(await store.getItem(key)) ?? 0;
 		// Increment value by 1
 		const incremented: number = await remote.incrementNum(previous);
 		// Save value to store

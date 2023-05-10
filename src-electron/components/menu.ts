@@ -5,7 +5,7 @@ import { app, Menu } from 'electron';
  * Sets it as the ApplicationMenu.
  */
 export const createMenu = () => {
-	const template = [
+	const template: Electron.MenuItemConstructorOptions[] = [
 		// { role: 'appMenu' }
 		{
 			label: app.name,
@@ -43,7 +43,7 @@ export const createMenu = () => {
 				{ role: 'window' },
 			],
 		},
-	] as Electron.MenuItemConstructorOptions[];
+	];
 	const menu = Menu.buildFromTemplate(template);
 	Menu.setApplicationMenu(menu);
 };
