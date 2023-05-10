@@ -9,7 +9,7 @@ import { loadServiceWorkerNative } from './service-worker-native';
  */
 export const loadServiceWorker = () => {
 	if ('serviceWorker' in navigator) {
-		if (IS_CAPACITOR || IS_ELECTRON) {
+		if (!IS_DEV && (IS_CAPACITOR || IS_ELECTRON)) {
 			loadServiceWorkerNative();
 		} else {
 			loadServiceWorkerWeb();
