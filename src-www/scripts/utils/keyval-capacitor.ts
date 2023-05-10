@@ -34,7 +34,7 @@ export const cSet = async (key: string, val: JSONValue) => {
  * @returns true if key exists <boolean>
  */
 export const cExists = async (key: string) => {
-	return ((await Preferences.keys()) as unknown as Array<string>).includes(key);
+	return (await Preferences.keys()).keys.includes(key);
 };
 
 /**
