@@ -74,7 +74,7 @@
 		"postcss-mixins": "^9.0.4",
 		"postcss-preset-env": "^8.0.1",
 		"prettier": "^2.8.7",
-		"pwa-asset-generator": "^6.2.1",
+		"pwa-asset-generator": "^6.3.0",
 		"rimraf": "^5.0.0",
 		"typescript": "^5.0.2",
 		"workbox-cli": "^6.5.4"
