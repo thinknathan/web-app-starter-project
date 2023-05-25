@@ -44,7 +44,7 @@
 		"electron-window-state": "^5.0.3",
 		"fflate": "^0.8.0",
 		"idb-keyval": "^6.2.1",
-		"modern-normalize": "^1.1.0",
+		"modern-normalize": "^2.0.0",
 		"workbox-window": "^6.5.4",
 		"worker-async": "^1.1.0"
 	},
