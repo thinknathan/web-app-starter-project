@@ -54,7 +54,7 @@
 		"@capacitor/cli": "^4.8.0",
 		"@capacitor/core": "^4.8.0",
 		"@types/node": "*",
-		"@typescript-eslint/eslint-plugin": "^5.59.6",
+		"@typescript-eslint/eslint-plugin": "^5.59.7",
 		"@typescript-eslint/parser": "^5.59.7",
 		"concurrently": "^8.0.1",
 		"cross-env": "^7.0.3",
