@@ -45,7 +45,7 @@
 		"fflate": "^0.8.0",
 		"idb-keyval": "^6.2.1",
 		"modern-normalize": "^2.0.0",
-		"workbox-window": "^6.5.4",
+		"workbox-window": "^6.6.0",
 		"worker-async": "^1.1.0"
 	},
 	"devDependencies": {
