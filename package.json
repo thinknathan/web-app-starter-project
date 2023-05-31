@@ -77,6 +77,6 @@
 		"pwa-asset-generator": "^6.3.1",
 		"rimraf": "^5.0.1",
 		"typescript": "^5.0.2",
-		"workbox-cli": "^6.6.0"
+		"workbox-cli": "^6.6.1"
 	}
 }
