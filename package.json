@@ -65,7 +65,7 @@
 		"esbuild-ifdef": "^0.2.0",
 		"esbuild-plugin-inline-worker": "^0.1.1",
 		"esbuild-style-plugin": "^1.6.2",
-		"eslint": "^8.41.0",
+		"eslint": "^8.42.0",
 		"eslint-config-prettier": "^8.7.0",
 		"eslint-plugin-import": "^2.26",
 		"eslint-plugin-prettier": "^4.2.1",
