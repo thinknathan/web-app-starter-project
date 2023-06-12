@@ -1001,10 +1001,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@capacitor/preferences@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-5.0.2.tgz#64559f1a89310f48a9f9014ecfd1434e9a6e454c"
-  integrity sha512-NOBA4TFC9sq0UU13dKHCDqNsD3X5TGPFgtGvRcJorBvbllUwMMBAbkjF5iCVsoenAN55d77Qh9wXufewdMpXjg==
+"@capacitor/preferences@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-5.0.4.tgz#16226ba0e247705a69a9e59210284af5f2fc58d1"
+  integrity sha512-GV3QysJ724GO/CE8KHRYdq8tpzCrJWKVtOJGkLoPt+qlr88SNN+ayNMXlZE1LCMJ5eevdWDreSjQXiYfkUvnoA==
 
 "@capacitor/splash-screen@^5.0.4":
   version "5.0.4"
