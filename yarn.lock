@@ -1006,10 +1006,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-5.0.2.tgz#64559f1a89310f48a9f9014ecfd1434e9a6e454c"
   integrity sha512-NOBA4TFC9sq0UU13dKHCDqNsD3X5TGPFgtGvRcJorBvbllUwMMBAbkjF5iCVsoenAN55d77Qh9wXufewdMpXjg==
 
-"@capacitor/splash-screen@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/splash-screen/-/splash-screen-5.0.2.tgz#d5dbf5019e09199b3b8eee11edcddb30a48cb5b3"
-  integrity sha512-DJQQL3VfY7LfMH0FJgzrb0N1v3fZw0EVfBRB+xQjbI13jjoafS8WPRCQDvXxzoJqfh5hQyepDRyYxIdOCB2KEA==
+"@capacitor/splash-screen@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@capacitor/splash-screen/-/splash-screen-5.0.4.tgz#1a3ebb9b6f04dbb174db324df72b348f6d45e3b0"
+  integrity sha512-gWV6mSIDyT+4oSC7NKvCSHdBhDIZi8JK7xS/iknkL8bLTZp6/My/vvA+67fRNvmELzGrk3MmbGhLdLoLnsd5dA==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"

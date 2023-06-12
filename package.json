@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"@capacitor/preferences": "^5.0.0",
-		"@capacitor/splash-screen": "^5.0.0",
+		"@capacitor/splash-screen": "^5.0.4",
 		"@snackbar/core": "^1.7.0",
 		"electron-store": "^8.1.0",
 		"electron-window-state": "^5.0.3",
