@@ -11,6 +11,7 @@ module.exports = async function () {
 	return {
 		appId: appId,
 		copyright: `Copyright © ${author}`,
+		downloadAlternateFFmpeg: true,
 		directories: {
 			output: 'dist/electron',
 			buildResources: 'src-electron/buildResources',

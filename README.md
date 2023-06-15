@@ -252,12 +252,6 @@ You may choose to use this software under any of the following licenses, at your
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be triple licensed as above, without any additional terms or conditions.
 
-## Planned features
-
-- Once electron-builder hits v24:
-  - Switch electron-builder.config.js to TypeScript
-  - Use downloadAlternateFFmpeg option to download non-proprietary ffmpeg library
-
 ## Thanks
 
 - Electron team for [electron-quick-start](https://github.com/electron/electron-quick-start)
