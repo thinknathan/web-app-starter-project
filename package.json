@@ -61,7 +61,7 @@
 		"electron": "^25.1.1",
 		"electron-builder": "^24.4.0",
 		"electron-debug": "^3.2.0",
-		"esbuild": "^0.18.2",
+		"esbuild": "^0.18.3",
 		"esbuild-ifdef": "^0.2.0",
 		"esbuild-plugin-inline-worker": "^0.1.1",
 		"esbuild-style-plugin": "^1.6.2",
