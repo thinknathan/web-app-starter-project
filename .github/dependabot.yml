@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 10
+    versioning-strategy: 'widen'
+    range-mapping:
+      'caret': 'widen'
+      'tilde': 'widen'
     ignore:
       - dependency-name: '*'
         update-types: ['version-update:semver-major']
