@@ -1040,9 +1040,9 @@
     xml2js "^0.5.0"
 
 "@capacitor/core@^5.0.5":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-5.1.0.tgz#fab9985a0e54f5636c1f7c3692ca04b2ecdc9e9d"
-  integrity sha512-lQDcQ0WKwyhFdtOXxyB+szxlTscGZeOk1tgNVrTg4glnF4k92RrC3uD4LQ27ITFwjBmTNPvOS3vyLz6B3I3JeA==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-5.1.1.tgz#5c161ef54928ae257b26692c2a9758738166637f"
+  integrity sha512-17rZMGpZYQgBAmUS1uAS1GrRkPAQiUfpTfvd2wWS9z87GoTL/5vtpPAtI0/XLtr4eve2TsATY2r8BaW2NfEO6Q==
   dependencies:
     tslib "^2.1.0"
 
