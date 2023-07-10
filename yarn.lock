@@ -1017,9 +1017,9 @@
     xml2js "^0.4.23"
 
 "@capacitor/cli@^5.0.5":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-5.1.0.tgz#2a5fd8c0bac94ea375c900fae9310a54efb2b84b"
-  integrity sha512-pAXCfLmiaG1F3TEcl7SR/EggIyk8SS5VMmHZPlxNOurilKf1gSIJUbwOs736cmOaqRmCKE8T/WtcBeKMdMdN1g==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-5.1.1.tgz#58430b33947cb1c6279dc0219420a59a88efdb57"
+  integrity sha512-q9yg4P+UsmEpNNTza040gxHtN7MvbHCaow2hi/podQ37sPxzpycg179tyYDjss07N02Qe3M/ReO42TgjAy27DQ==
   dependencies:
     "@ionic/cli-framework-output" "^2.2.5"
     "@ionic/utils-fs" "^3.1.6"
