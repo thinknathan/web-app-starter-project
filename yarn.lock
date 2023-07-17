@@ -1052,9 +1052,9 @@
   integrity sha512-SPdmfsfKayWvQ0LV6F5c7v9G4iXD0LK0qeDMM/7rqIb+AD3JYdEd92JcXb/huG+SgD0iDGsvSOllEF+W2qQc7g==
 
 "@capacitor/splash-screen@^5.0.4":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@capacitor/splash-screen/-/splash-screen-5.0.5.tgz#f73c6a1b4272734634a595f7c7871f7233df91e8"
-  integrity sha512-KOBHE3YCfTXDnDz348ZTLeH1vrS8Cq+UpXlouzlGW8KwssUlXodRIsO5cQz1xK3VM+UJVm7iDQUONZFAcIMQeg==
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@capacitor/splash-screen/-/splash-screen-5.0.6.tgz#d29320de49cc68add59e17fecb64aa2f1a08447f"
+  integrity sha512-9B8wSm89D+LlshFw8B+mjPU8pJNf1WOx2mkMjMvcH0/EqxNaE+ZaO8lPCX+9WvWSEZs3O3l11qiSnOFHeK0t9A==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
