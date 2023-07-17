@@ -972,9 +972,9 @@
     to-fast-properties "^2.0.0"
 
 "@capacitor/android@^5.0.5":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.1.1.tgz#a53fdf0ac3525a6dd7f0294e7025786eebca0027"
-  integrity sha512-FaDg+Igjiz6ohH7yu5TpLHGCQbsjMMy+0a+idsyadTnz/IzRZwqlCyj4Jbqsb5J39j0hE8kqD3o1e5O5Ukbm2g==
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.2.1.tgz#3e3d7a848017b0f62b53ad13367c140954efde77"
+  integrity sha512-KtalBSaWCLSubqp78TrLiodLhlunTnzgydz/5HanioVQ8RR81pjdlYhckW0AiA0mVVLhA1/bFCCGsynksFkTfQ==
 
 "@capacitor/assets@^2.0.4":
   version "2.0.4"
