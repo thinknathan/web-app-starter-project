@@ -10,7 +10,7 @@ interface Window {
 			readonly getItem: (key: string) => Promise<{ data: string | null }>;
 			readonly setItem: (
 				key: string,
-				val: string
+				val: string,
 			) => Promise<{ success: boolean }>;
 			readonly hasItem: (key: string) => Promise<{ exists: boolean }>;
 			readonly removeItem: (key: string) => Promise<{ success: boolean }>;

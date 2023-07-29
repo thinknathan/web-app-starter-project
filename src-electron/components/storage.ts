@@ -19,15 +19,15 @@ export const createStorage = (settings: {
 							compressSync(strToU8(JSON.stringify(value)), {
 								level: 1,
 							}),
-							true
-						)
+							true,
+						),
 					);
 			  }
 			: JSON.stringify,
 		deserialize: settings.compression
 			? (value) => {
 					return JSON.parse(
-						strFromU8(decompressSync(strToU8(JSON.parse(value), true)))
+						strFromU8(decompressSync(strToU8(JSON.parse(value), true))),
 					);
 			  }
 			: JSON.parse,
@@ -48,7 +48,7 @@ export const createStorage = (settings: {
 
 			// Return data to the renderer.
 			return { data: dataString };
-		}
+		},
 	);
 
 	// Handle storing incoming data from the renderer.
@@ -61,7 +61,7 @@ export const createStorage = (settings: {
 
 			// Return a success message to the renderer.
 			return { success: true };
-		}
+		},
 	);
 
 	// Handle incoming requests to check if a key exists.
@@ -71,7 +71,7 @@ export const createStorage = (settings: {
 		async (event, key: string): Promise<{ exists: boolean }> => {
 			const exists = store.has(key);
 			return { exists };
-		}
+		},
 	);
 
 	// Handle incoming requests to delete a key.
@@ -81,7 +81,7 @@ export const createStorage = (settings: {
 		async (event, key: string): Promise<{ success: boolean }> => {
 			store.delete(key);
 			return { success: true };
-		}
+		},
 	);
 
 	// Handle incoming requests to delete all keys.
@@ -91,6 +91,6 @@ export const createStorage = (settings: {
 		async (event): Promise<{ success: boolean }> => {
 			store.clear();
 			return { success: true };
-		}
+		},
 	);
 };

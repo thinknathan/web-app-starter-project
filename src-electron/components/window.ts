@@ -63,7 +63,7 @@ export const createWindow = async (settings: {
 		mainWindow.setBackgroundColor(
 			nativeTheme.shouldUseDarkColors
 				? settings.darkBackground
-				: settings.lightBackground
+				: settings.lightBackground,
 		);
 	});
 
@@ -83,7 +83,7 @@ export const createWindow = async (settings: {
 			parsedUrl.origin !== 'file://'
 		) {
 			console.error(
-				'[window.ts] Navigation attempt blocked due to unallowed origin.'
+				'[window.ts] Navigation attempt blocked due to unallowed origin.',
 			);
 			event.preventDefault();
 		}
