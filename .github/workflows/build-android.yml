@@ -53,7 +53,7 @@ jobs:
 
       - name: Create APK from AAB
         id: convert_aab
-        uses: mukeshsolanki/bundletool-action@v1.0.1
+        uses: mukeshsolanki/bundletool-action@v1
         with:
           aabFile: android/app/build/outputs/bundle/release/app-release.aab
           base64Keystore: ${{ secrets.RELEASE_KEYSTORE }}
