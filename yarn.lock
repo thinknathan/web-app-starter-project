@@ -3837,9 +3837,9 @@ electron-window-state@^5.0.3:
     mkdirp "^0.5.1"
 
 electron@~22.3.14:
-  version "22.3.22"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-22.3.22.tgz#82c006e25745470c535ba03723ed0a68828c41f6"
-  integrity sha512-jSZDXwQXa98QlCzZNWRxKhcJC3ZI6WpsA2Fdvwj5eOtFqhwnbvL5HiO7IzTCcUnGggaYgVcDSfbssloA3hxcvw==
+  version "22.3.23"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-22.3.23.tgz#67aa70490f6a33e3d174341343d9d5ffff084630"
+  integrity sha512-2p6NsLFPfM2RmgATchjKZKBUP3O6NxQMWOrHt9W5U2GRtfI8qWlicUR1wnh5D1VLt4c1YsjvpF6dct+1JNRubA==
   dependencies:
     "@electron/get" "^2.0.0"
     "@types/node" "^16.11.26"
