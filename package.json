@@ -53,6 +53,7 @@
 		"@capacitor/assets": "^2.0.4",
 		"@capacitor/cli": "^5.0.5",
 		"@capacitor/core": "^5.0.5",
+		"@total-typescript/ts-reset": "^0.5.1",
 		"@types/node": "*",
 		"@typescript-eslint/eslint-plugin": "~6.2.0",
 		"@typescript-eslint/parser": "~6.2.0",
