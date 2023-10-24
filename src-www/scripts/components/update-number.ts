@@ -19,24 +19,37 @@ const worker = inlineWorker() as unknown as Worker;
  */
 const { remote } = promisify<Remote>(worker);
 
+const updateLogic = async (options?: { skipIncrement: boolean }) => {
+	const displayElement = document.getElementById('num');
+	if (!displayElement) {
+		console.warn('displayElement is null');
+		return;
+	}
+	const key = 'seconds';
+	// Get value from IndexedDB or set to 0
+	let currentNumber = Number(await store.getItem(key));
+	currentNumber = isNaN(currentNumber) ? 0 : currentNumber;
+	if (!options || !options.skipIncrement) {
+		// Increment value by 1
+		const nextNumber = await remote.incrementNum(currentNumber);
+		// Save value to store
+		await store.setItem(key, nextNumber);
+		// Update value in DOM
+		displayElement.textContent = String(nextNumber);
+	} else {
+		displayElement.textContent = String(currentNumber);
+	}
+};
+
 /**
  * Increments a number and stores it.
  * Updates every 1 second.
  */
 export const updateNumber = () => {
-	const key = 'seconds';
+	// Run logic to display number immediately
+	updateLogic({
+		skipIncrement: true,
+	});
 	// Run update every 1 second
-	setInterval(async () => {
-		// Get value from IndexedDB or set to 0
-		const previous: number = Number(await store.getItem(key)) ?? 0;
-		// Increment value by 1
-		const incremented: number = await remote.incrementNum(previous);
-		// Save value to store
-		await store.setItem(key, incremented);
-		// Update value in DOM
-		const element = document.getElementById('num');
-		if (element) {
-			element.textContent = String(incremented);
-		}
-	}, 1000);
+	setInterval(updateLogic, 1000);
 };
