@@ -4,7 +4,7 @@
 	"compilerOptions": {
 		"lib": ["ES2020"],
 		"module": "node16",
-		"moduleResolution": "Bundler",
+		"moduleResolution": "node16",
 		"typeRoots": ["./types/", "../node_modules/@types"]
 	},
 	"include": ["**/*.ts"]

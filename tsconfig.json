@@ -4,13 +4,8 @@
 		"allowSyntheticDefaultImports": true,
 		"alwaysStrict": true,
 		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
 		"isolatedModules": true,
-		"lib": [
-			"DOM",
-			"DOM.Iterable",
-			"ES2020"
-		],
+		"lib": ["DOM", "DOM.Iterable", "ES2020"],
 		"module": "esnext",
 		"moduleResolution": "Bundler",
 		"noEmit": true,
@@ -18,17 +13,9 @@
 		"resolveJsonModule": true,
 		"strict": true,
 		"target": "ES2020",
-		"typeRoots": [
-			"./src-www/scripts/types/",
-			"./node_modules/@types"
-		],
+		"typeRoots": ["./src-www/scripts/types/", "./node_modules/@types"],
 		"verbatimModuleSyntax": true
 	},
-	"include": [
-		"./src-www/**/*.ts"
-	],
-	"exclude": [
-		"./node_modules",
-		"./dist"
-	]
+	"include": ["./src-www/**/*.ts"],
+	"exclude": ["./node_modules", "./dist"]
 }
