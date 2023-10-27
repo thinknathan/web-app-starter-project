@@ -9,6 +9,8 @@
 		"module": "esnext",
 		"moduleResolution": "Bundler",
 		"noEmit": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
 		"noUncheckedIndexedAccess": true,
 		"resolveJsonModule": true,
 		"strict": true,
