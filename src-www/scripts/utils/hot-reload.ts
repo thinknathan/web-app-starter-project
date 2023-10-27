@@ -6,7 +6,7 @@
 export const hotReload = /* @__PURE__ */ () => {
 	console.log('[hot-reload.ts] Listening for changes...');
 	new EventSource('/esbuild').addEventListener('change', (e) => {
-		const { added, removed, updated } = JSON.parse(e.data);
+		const { added, removed, updated } = JSON.parse(e.data) as ReloadJSON;
 
 		if (!added.length && !removed.length && updated.length === 1) {
 			for (const link of document.getElementsByTagName('link')) {
@@ -24,4 +24,11 @@ export const hotReload = /* @__PURE__ */ () => {
 
 		location.reload();
 	});
+};
+
+// Guessing at these types
+type ReloadJSON = {
+	added: string[];
+	removed: string[];
+	updated: string[];
 };
