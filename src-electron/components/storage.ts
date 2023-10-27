@@ -27,7 +27,9 @@ export const createStorage = (settings: {
 		deserialize: settings.compression
 			? (value) => {
 					return JSON.parse(
-						strFromU8(decompressSync(strToU8(JSON.parse(value), true))),
+						strFromU8(
+							decompressSync(strToU8(JSON.parse(value) as string, true)),
+						),
 					);
 			  }
 			: JSON.parse,
