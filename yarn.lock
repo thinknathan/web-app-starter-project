@@ -3937,15 +3937,15 @@ esbuild-plugin-inline-worker@~0.1.1:
     find-cache-dir "^3.3.1"
 
 esbuild-style-plugin@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/esbuild-style-plugin/-/esbuild-style-plugin-1.6.2.tgz#6c5e63827ded00de03bc32689d861b9e836a7236"
-  integrity sha512-aSzuIUwQTEVVy9gcE4xtXq8Cbq9RNDfJYZ3mYzWg6RJ8HoMydLT+LbGXYwL0DmgOt4eEg/4JrnNMMb02gXFutA==
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/esbuild-style-plugin/-/esbuild-style-plugin-1.6.3.tgz#123c994047f1393bee6896c1c37bd4f1942c425f"
+  integrity sha512-XPEKf4FjLjEVLv/dJH4UxDzXCrFHYpD93DBO8B+izdZARW5b7nNKQbnKv3J+7VDWJbgCU+hzfgIh2AuIZzlmXQ==
   dependencies:
     "@types/less" "^3.0.3"
     "@types/sass" "^1.43.1"
     "@types/stylus" "^0.48.38"
     glob "^10.2.2"
-    postcss "^8.4.23"
+    postcss "^8.4.31"
     postcss-modules "^6.0.0"
 
 esbuild@latest, esbuild@~0.19.0:
@@ -6822,7 +6822,7 @@ postcss-value-parser@^4.1.0, postcss-value-parser@^4.2.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@^8.4.23, postcss@^8.4.24:
+postcss@^8.4.24, postcss@^8.4.31:
   version "8.4.31"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.31.tgz#92b451050a9f914da6755af352bdc0192508656d"
   integrity sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==
