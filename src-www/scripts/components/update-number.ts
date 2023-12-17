@@ -47,7 +47,7 @@ const updateLogic = async (options?: { skipIncrement: boolean }) => {
  */
 export const updateNumber = () => {
 	// Run logic to display number immediately
-	updateLogic({
+	void updateLogic({
 		skipIncrement: true,
 	});
 	// Run update every 1 second

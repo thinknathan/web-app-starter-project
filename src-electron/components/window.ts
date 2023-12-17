@@ -51,7 +51,7 @@ export const createWindow = async (settings: {
 	mainWindowState.manage(mainWindow);
 
 	// Load the index.html of the app.
-	mainWindow.loadFile('www/index.html');
+	void mainWindow.loadFile('www/index.html');
 
 	// Show window once it's ready.
 	mainWindow.once('ready-to-show', () => {
@@ -95,7 +95,7 @@ export const createWindow = async (settings: {
 		// Launch web tools.
 		mainWindow.webContents.once('dom-ready', () => {
 			setTimeout(() => {
-				// eslint-disable-next-line @typescript-eslint/no-var-requires
+				// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-call
 				require('electron-debug')();
 				mainWindow.webContents.openDevTools();
 			}, 0);

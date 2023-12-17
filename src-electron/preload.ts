@@ -20,6 +20,7 @@ contextBridge.exposeInMainWorld('electron', {
 		 * @param key
 		 * @returns Promise<{ data: string | null }>
 		 */
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		getItem: async (key: string) => await ipcRenderer.invoke('get-data', key),
 
 		/**
@@ -30,6 +31,7 @@ contextBridge.exposeInMainWorld('electron', {
 		 * @returns Promise<{ success: boolean }>
 		 */
 		setItem: async (key: string, val: string) =>
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 			await ipcRenderer.invoke('store-data', key, val),
 
 		/**
@@ -38,6 +40,7 @@ contextBridge.exposeInMainWorld('electron', {
 		 * @param key
 		 * @returns Promise<{ exists: boolean }>
 		 */
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		hasItem: async (key: string) => await ipcRenderer.invoke('key-exists', key),
 
 		/**
@@ -47,6 +50,7 @@ contextBridge.exposeInMainWorld('electron', {
 		 * @returns Promise<{ success: boolean }>
 		 */
 		removeItem: async (key: string) =>
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 			await ipcRenderer.invoke('delete-key', key),
 
 		/**
@@ -54,6 +58,7 @@ contextBridge.exposeInMainWorld('electron', {
 		 *
 		 * @returns Promise<{ success: boolean }>
 		 */
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		clearItems: async () => await ipcRenderer.invoke('delete-all-keys'),
 	},
 });

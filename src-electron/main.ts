@@ -17,7 +17,7 @@ if (!IS_DEV) {
  * initialization and is ready to create browser windows.
  * Some APIs can only be used after this event occurs.
  */
-app.whenReady().then(() => {
+void app.whenReady().then(() => {
 	const windowSettings = {
 		width: 960,
 		height: 528,
@@ -28,14 +28,14 @@ app.whenReady().then(() => {
 		name: 'persistent-data',
 		compression: false,
 	};
-	createWindow(windowSettings);
+	void createWindow(windowSettings);
 	createStorage(storageSettings);
 
 	app.on('activate', () => {
 		// On macOS it's common to re-create a window in the app when the
 		// dock icon is clicked and there are no other windows open.
 		if (BrowserWindow.getAllWindows().length === 0)
-			createWindow(windowSettings);
+			void createWindow(windowSettings);
 	});
 });
 

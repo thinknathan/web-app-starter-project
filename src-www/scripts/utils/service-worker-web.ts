@@ -27,13 +27,13 @@ export const loadServiceWorkerWeb = () => {
 						},
 						callback(_, snackbar) {
 							wb.messageSkipWaiting();
-							snackbar.destroy();
+							void snackbar.destroy();
 						},
 					},
 				],
 			});
 			setTimeout(() => {
-				updatingNotice.destroy();
+				void updatingNotice.destroy();
 			}, 4000);
 			window.location.reload();
 		});
@@ -53,13 +53,13 @@ export const loadServiceWorkerWeb = () => {
 					},
 					callback(_, snackbar) {
 						wb.messageSkipWaiting();
-						snackbar.destroy();
+						void snackbar.destroy();
 					},
 				},
 			],
 		});
 		setTimeout(() => {
-			updateNotice.destroy();
+			void updateNotice.destroy();
 		}, 10000);
 	};
 
@@ -68,7 +68,7 @@ export const loadServiceWorkerWeb = () => {
 	 * service worker has installed but is waiting to activate.
 	 */
 	wb.addEventListener('waiting', () => {
-		showSkipWaitingPrompt();
+		void showSkipWaitingPrompt();
 	});
 
 	// Runs when the service worker becomes operational.
@@ -88,14 +88,14 @@ export const loadServiceWorkerWeb = () => {
 				],
 			});
 			setTimeout(() => {
-				readyNotice.destroy();
+				void readyNotice.destroy();
 			}, 4000);
 		}
 	});
 
 	// Install the service worker.
-	wb.register();
+	void wb.register();
 
 	// Check for updates.
-	wb.update();
+	void wb.update();
 };

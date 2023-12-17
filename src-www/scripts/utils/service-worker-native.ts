@@ -12,8 +12,8 @@ export const loadServiceWorkerNative = () => {
 	});
 
 	// Install the service worker.
-	wb.register();
+	void wb.register();
 
 	// Check for updates.
-	wb.update();
+	void wb.update();
 };
