@@ -22,11 +22,7 @@
 			"./src-www/scripts/web-workers/tsconfig.json"
 		]
 	},
-	"plugins": [
-		"import",
-		"@typescript-eslint",
-		"prettier"
-	],
+	"plugins": ["import", "@typescript-eslint", "prettier"],
 	"rules": {
 		"prettier/prettier": "warn",
 		"no-console": "off",

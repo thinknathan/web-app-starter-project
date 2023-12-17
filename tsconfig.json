@@ -5,11 +5,7 @@
 		"alwaysStrict": true,
 		"esModuleInterop": true,
 		"isolatedModules": true,
-		"lib": [
-			"DOM",
-			"DOM.Iterable",
-			"ES2020"
-		],
+		"lib": ["DOM", "DOM.Iterable", "ES2020"],
 		"module": "esnext",
 		"moduleResolution": "Bundler",
 		"noEmit": true,
@@ -26,11 +22,6 @@
 		],
 		"verbatimModuleSyntax": true
 	},
-	"include": [
-		"./src-www/**/*.ts"
-	],
-	"exclude": [
-		"./node_modules",
-		"./dist"
-	]
+	"include": ["./src-www/**/*.ts"],
+	"exclude": ["./node_modules", "./dist"]
 }

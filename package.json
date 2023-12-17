@@ -30,9 +30,7 @@
 		"lint": "yarn lint:www && yarn lint:electron",
 		"lint:www": "eslint src-www/scripts",
 		"lint:electron": "eslint src-electron",
-		"prettier": "yarn prettier:scripts && yarn prettier:styles",
-		"prettier:scripts": "prettier --write src-www/scripts && prettier --write src-electron",
-		"prettier:styles": "prettier --write src-www/styles",
+		"prettier": "prettier --write ./**/*.{eslintrc,yml,json,js,ts,mjs,md,d.ts}",
 		"sw": "yarn clean:sw && cross-env-shell NODE_ENV=production npx workbox-cli generateSW workbox-config.js",
 		"sw:dev": "yarn clean:sw && cross-env-shell NODE_ENV=development npx workbox-cli generateSW workbox-config.js"
 	},
