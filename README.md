@@ -248,7 +248,7 @@ You may choose to use this software under either of the following licenses, at y
 
 ## Your contributions
 
-Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, shall be dual licensed as above, without any additional terms or conditions.
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you shall be dual licensed as above, without any additional terms or conditions.
 
 ## Thanks
 
