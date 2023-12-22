@@ -241,16 +241,14 @@ The default Github Action will fail when trying to build a Flatpak due to these 
 
 ## License
 
-You may choose to use this software under any of the following licenses, at your option:
+You may choose to use this software under either of the following licenses, at your option:
 
 - [GNU General Public License Version 3.0](LICENSE), or any later version
-- [Apache License, Version 2.0, with the “Commons Clause” License Condition v1.0](LICENSE-APACHE)
-- [Arbitrary Anti-Capitalist License 1.0](LICENSE-AACL.md)
-  - Required Notice: Copyright Nathan Bolton (https://thinknathan.ca)
+- [Mozilla Public License 2.0](LICENSE-MPL-2.0)
 
 ## Your contributions
 
-Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be triple licensed as above, without any additional terms or conditions.
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, shall be dual licensed as above, without any additional terms or conditions.
 
 ## Thanks
 

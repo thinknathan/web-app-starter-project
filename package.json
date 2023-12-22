@@ -6,7 +6,8 @@
 	"productName": "Web App Starter Project",
 	"description": "",
 	"author": "Nathan Bolton",
-	"version": "1.2.0",
+	"version": "2.0.0",
+	"license": "(GPL-3.0 OR MPL-2.0)",
 	"main": "www/main.js",
 	"scripts": {
 		"build": "yarn clean && node build-www.mjs",
