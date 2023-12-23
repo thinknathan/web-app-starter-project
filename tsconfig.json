@@ -16,6 +16,7 @@
 		"strict": true,
 		"target": "ES2020",
 		"typeRoots": [
+			"./@types",
 			"./src-www/scripts/types/",
 			"./node_modules/@types",
 			"!./node_modules/@types/sass"

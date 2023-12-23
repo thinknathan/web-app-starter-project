@@ -8135,6 +8135,11 @@ ts-node@^10.2.1:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
+ts-reset@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/ts-reset/-/ts-reset-0.0.1.tgz#4cc1ec7215349250a393d90ac0100574950ad51e"
+  integrity sha512-MAN3eAzO2T0hWXN4iHaH6YBFU9ZX9fMXkCPYPbgy+tHU4NLFOUbuBUgefl2122CuJ2WDP8DjrRg3NTS0LYd1WQ==
+
 tsconfig-paths@^3.15.0:
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.15.0.tgz#5299ec605e55b1abb23ec939ef15edaf483070d4"

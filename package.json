@@ -76,6 +76,7 @@
 		"prettier": "~3.0.0",
 		"pwa-asset-generator": "^6.3.1",
 		"rimraf": "^5.0.1",
+		"ts-reset": "^0.0.1",
 		"typescript": "~5.2.0",
 		"workbox-cli": "^7.0.0"
 	},
