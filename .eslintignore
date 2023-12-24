@@ -1,4 +1,5 @@
 node_modules
-./*.cjs
-./*.mjs
+*.js
+*.cjs
+*.mjs
 @types/reset.d.ts
