@@ -22,7 +22,7 @@ export const createStorage = (settings: {
 							true,
 						),
 					);
-			  }
+				}
 			: JSON.stringify,
 		deserialize: settings.compression
 			? (value) => {
@@ -31,7 +31,7 @@ export const createStorage = (settings: {
 							decompressSync(strToU8(JSON.parse(value) as string, true)),
 						),
 					);
-			  }
+				}
 			: JSON.parse,
 	});
 
