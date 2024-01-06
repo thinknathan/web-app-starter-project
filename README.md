@@ -1,3 +1,5 @@
+<img src="_docs/wasp.png" alt="Web App Starter Project">
+
 # Web App Starter Project
 
 Web App Starter Project is a starting point for web app development. Apps can be packaged for the web, Windows, macOS, Linux, or Android via [Github Actions](https://github.com/features/actions).

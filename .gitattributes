@@ -3,3 +3,7 @@
 
 # TypeScript
 *.d.ts linguist-language=TypeScript
+
+# Exclude files from archive
+.gitattributes export-ignore
+_docs export-ignore
