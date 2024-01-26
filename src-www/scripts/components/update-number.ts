@@ -1,3 +1,4 @@
+/* Copyright (c) Nathan Bolton (GPL-3.0 OR MPL-2.0) | https://github.com/thinknathan/web-app-starter-project */
 import promisify from 'worker-async';
 import inlineWorker, { Remote } from '../web-workers/example.worker.js';
 import { KeyValStore } from '../utils/keyval-store.js';

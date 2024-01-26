@@ -1,3 +1,4 @@
+/* Copyright (c) Nathan Bolton (GPL-3.0 OR MPL-2.0) | https://github.com/thinknathan/web-app-starter-project */
 /// #if IS_ELECTRON === 'true'
 import { eSet, eGet, eDel, eExists, eClear } from './keyval-electron.js';
 /// #elif IS_CAPACITOR === 'true'
