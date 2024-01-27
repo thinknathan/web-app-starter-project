@@ -1,0 +1,41 @@
+name: CI Desktop
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 2 2 */4 *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+          cache: 'yarn'
+
+      - name: Install JS dependencies
+        run: yarn
+
+      - name: Build Electron app
+        run: yarn build:desktop
+        env:
+          GH_TOKEN: ${{ secrets.github_token }}

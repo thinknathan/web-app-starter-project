@@ -1,0 +1,52 @@
+name: CI Android
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 2 2 */4 *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+          cache: 'yarn'
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
+
+      - name: Install JS dependencies
+        run: yarn
+
+      - name: Setup Android project
+        continue-on-error: true
+        run: npx --no cap add android
+
+      - name: Build JS app
+        run: yarn build:mobile
+
+      - name: Update Android dependencies
+        run: npx cap sync
+
+      - name: Make Gradle executable
+        run: chmod +x ./android/gradlew
+
+      - name: Build and sign Android app
+        run: npx cap build android
