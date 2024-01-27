@@ -15,16 +15,16 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup NodeJS
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
           cache: 'yarn'
 
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
@@ -45,8 +45,11 @@ jobs:
       - name: Update Android dependencies
         run: npx cap sync
 
+      - name: Generate debug keystore
+        run: keytool -genkey -v -keystore $HOME/.android/debug.keystore -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+
       - name: Make Gradle executable
         run: chmod +x ./android/gradlew
 
       - name: Build and sign Android app
-        run: npx cap build android
+        run: npx cap build android --keystorepath $HOME/.android/debug.keystore --keystorepass android --keystorealias android --keystorealiaspass android
