@@ -2,6 +2,8 @@
 
 # Web App Starter Project
 
+[![CI Desktop](https://github.com/thinknathan/web-app-starter-project/actions/workflows/ci-desktop.yml/badge.svg)](https://github.com/thinknathan/web-app-starter-project/actions/workflows/ci-desktop.yml) [![CI Android](https://github.com/thinknathan/web-app-starter-project/actions/workflows/ci-android.yml/badge.svg)](https://github.com/thinknathan/web-app-starter-project/actions/workflows/ci-android.yml)
+
 Web App Starter Project is a starting point for web app development. Apps can be packaged for the web, Windows, macOS, Linux, or Android via [Github Actions](https://github.com/features/actions).
 
 For development, WASP installs opinionated defaults in the form of [TypeScript](https://www.typescriptlang.org/) and [PostCSS](https://postcss.org/), but can be made to work with any [framework](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks). Its focus is building for the web first. Non-browser APIs are only used to smooth over platform differences.
