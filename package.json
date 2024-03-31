@@ -71,7 +71,6 @@
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-import": "^2.29.0",
-		"eslint-plugin-prettier": "^5.1.0",
 		"icon-gen": "^4.0.0",
 		"postcss": "^8.4.24",
 		"postcss-mixins": "^9.0.4",
