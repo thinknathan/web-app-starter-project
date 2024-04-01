@@ -973,9 +973,9 @@
     to-fast-properties "^2.0.0"
 
 "@capacitor/android@^5.0.5":
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.7.3.tgz#ded1ab2bec2cff887b5b8a958138f2552e23435a"
-  integrity sha512-l4FoagqyoId+D/597fG8pPfmVrNevzWzbtkJkbGtQZS5rqRR4HCNoJn0LAMs812o9bfuxGdE1T3MjpehGOe0Rw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.7.4.tgz#e91cb4dd06492ad41f0102a901dd329093610d8c"
+  integrity sha512-9ETwrCaLaimLHbwGpgfsPS9cHcPMFLmKFdlYsFsYIusMO6aOrcQTA9Q4xVAkr55ava4Wk+pVRniRYsekrbOLdw==
 
 "@capacitor/assets@^3.0.1":
   version "3.0.5"
