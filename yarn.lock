@@ -978,9 +978,9 @@
   integrity sha512-l4FoagqyoId+D/597fG8pPfmVrNevzWzbtkJkbGtQZS5rqRR4HCNoJn0LAMs812o9bfuxGdE1T3MjpehGOe0Rw==
 
 "@capacitor/assets@^3.0.1":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@capacitor/assets/-/assets-3.0.4.tgz#f328386cfcc7a9c3850b132ee06c74cbfcd35be8"
-  integrity sha512-9t/u2i9vSEWDfarzDJmQEgi07Tozyw2mKZYTkybb2Zkc8ufqR0S6ZzDBmWbsTtOTVwRr0uU9Rx3c8AVbA1xDtA==
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@capacitor/assets/-/assets-3.0.5.tgz#55c66458e703ce95e2e3188caad8b987b94b66f0"
+  integrity sha512-ohz/OUq61Y1Fc6aVSt0uDrUdeOA7oTH4pkWDbv/8I3UrPjH7oPkzYhShuDRUjekNp9RBi198VSFdt0CetpEOzw==
   dependencies:
     "@capacitor/cli" "^5.3.0"
     "@ionic/utils-array" "2.1.6"
