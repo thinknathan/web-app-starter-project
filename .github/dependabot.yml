@@ -9,6 +9,7 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: 'lockfile-only'
+    open-pull-requests-limit: 100
     ignore:
       - dependency-name: '*'
         update-types: ['version-update:semver-major']
