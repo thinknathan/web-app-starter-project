@@ -39,8 +39,7 @@ export const createStorage = (settings: {
 	// Handle returning data to the renderer.
 	ipcMain.handle(
 		'get-data',
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
-		async (event, key: string): Promise<{ data: string | null }> => {
+		async (_event, key: string): Promise<{ data: string | null }> => {
 			// Retrieve the data.
 			const dataString = store.get(key);
 
@@ -57,8 +56,11 @@ export const createStorage = (settings: {
 	// Handle storing incoming data from the renderer.
 	ipcMain.handle(
 		'store-data',
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
-		async (event, key: string, data: string): Promise<{ success: boolean }> => {
+		async (
+			_event,
+			key: string,
+			data: string,
+		): Promise<{ success: boolean }> => {
 			// Store the data.
 			store.set(key, data);
 
@@ -70,8 +72,7 @@ export const createStorage = (settings: {
 	// Handle incoming requests to check if a key exists.
 	ipcMain.handle(
 		'key-exists',
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
-		async (event, key: string): Promise<{ exists: boolean }> => {
+		async (_event, key: string): Promise<{ exists: boolean }> => {
 			const exists = store.has(key);
 			return { exists };
 		},
@@ -80,8 +81,7 @@ export const createStorage = (settings: {
 	// Handle incoming requests to delete a key.
 	ipcMain.handle(
 		'delete-key',
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
-		async (event, key: string): Promise<{ success: boolean }> => {
+		async (_event, key: string): Promise<{ success: boolean }> => {
 			store.delete(key);
 			return { success: true };
 		},
@@ -90,8 +90,7 @@ export const createStorage = (settings: {
 	// Handle incoming requests to delete all keys.
 	ipcMain.handle(
 		'delete-all-keys',
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
-		async (event): Promise<{ success: boolean }> => {
+		async (_event): Promise<{ success: boolean }> => {
 			store.clear();
 			return { success: true };
 		},
