@@ -9,7 +9,7 @@ import ifDefPlugin from 'esbuild-ifdef';
 import stylePlugin from 'esbuild-style-plugin';
 import postcssMixins from 'postcss-mixins';
 import postcssPresetEnv from 'postcss-preset-env';
-import packageJson from './package.json' assert { type: 'json' };
+import packageJson from './package.json' with { type: 'json' };
 
 if (process.env.NODE_ENV === undefined)
 	console.log('[build-www] Warning: NODE_ENV is undefined.');
