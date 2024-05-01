@@ -3,6 +3,8 @@
  * Build process for JS and CSS files targeting the browser.
  */
 
+// @ts-check
+
 import * as esbuild from 'esbuild';
 import inlineWorkerPlugin from 'esbuild-plugin-inline-worker';
 import ifDefPlugin from 'esbuild-ifdef';
@@ -24,7 +26,7 @@ const isDesktop = TARGET_ENV === 'desktop';
 const isMobileNative = TARGET_ENV === 'mobile';
 
 // Drop `console` and `debugger` statements from production code.
-const drop = isDev ? [] : ['console', 'debugger'];
+const DROP = ['console', 'debugger'];
 
 // Make constants available to your TypeScript.
 const define = {
@@ -67,20 +69,24 @@ const plugins = [
 	}),
 ];
 
+/** @type esbuild.Platform */
+const PLATFORM = 'browser';
+
 // Configure settings for esbuild.
 const settings = {
 	bundle: true,
 	define: define,
-	drop: drop,
 	entryPoints: ['src-www/scripts/app.ts', 'src-www/styles/app.css'],
 	minify: !isDev,
 	outbase: 'src-www',
 	outdir: 'www/assets',
-	platform: 'browser',
+	platform: PLATFORM,
 	plugins: plugins,
 	sourcemap: isDev,
 	target: ['es2020'],
 };
+
+if (isDev) settings.drop = DROP;
 
 console.log('[build-www] Building src-www...', {
 	NODE_ENV,
@@ -96,7 +102,7 @@ if (isDev) {
 
 	// Launch a dev server unless you're building Electron.
 	if (!isDesktop) {
-		const { host, port } = await context.serve({
+		const { port } = await context.serve({
 			servedir: 'www',
 		});
 		console.log(`[build-www] Launching server at http://localhost:${port}/`);

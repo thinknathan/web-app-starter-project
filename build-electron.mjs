@@ -3,6 +3,8 @@
  * Build process for Electron `main` and `preload` scripts.
  */
 
+// @ts-check
+
 import * as esbuild from 'esbuild';
 
 if (process.env.NODE_ENV === undefined)
@@ -14,7 +16,10 @@ const TARGET_ENV = process.env.TARGET_ENV ?? 'unknown';
 const isDev = NODE_ENV === 'development';
 
 // Drop `console` and `debugger` statements from production code.
-const drop = isDev ? [] : ['console', 'debugger'];
+const DROP = ['console', 'debugger'];
+
+/** @type esbuild.Platform */
+const PLATFORM = 'node';
 
 // Configure settings for esbuild.
 const settings = {
@@ -24,15 +29,16 @@ const settings = {
 		TARGET_ENV: JSON.stringify(TARGET_ENV),
 		IS_DEV: JSON.stringify(isDev),
 	},
-	drop: drop,
 	entryPoints: ['src-electron/main.ts', 'src-electron/preload.ts'],
 	external: ['electron'],
 	minify: !isDev,
 	outdir: 'www',
-	platform: 'node',
+	platform: PLATFORM,
 	sourcemap: isDev,
 	target: ['node18'],
 };
+
+if (isDev) settings.drop = DROP;
 
 console.log('[build-electron] Building src-electron...', {
 	NODE_ENV,
