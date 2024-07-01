@@ -989,9 +989,9 @@
     yargs "17.7.2"
 
 "@capacitor/cli@^5.0.5", "@capacitor/cli@^5.3.0":
-  version "5.7.5"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-5.7.5.tgz#a5ca439ee10e67ea1005ebcab99701e9deea2626"
-  integrity sha512-CEgCXq3NNacS+9EptJXM+Cm915oB8eNPhiTP7ylKsQchrY0CGbeyO5y4A/oYnB/h4f+UiaX3ShlIOljx3+agqw==
+  version "5.7.6"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-5.7.6.tgz#fe6a92ab1daff69cd9d6524b24bef99e531a6feb"
+  integrity sha512-CDDcBF7wHm5v/j0dA2bls0vK954XlD1JCjMuTgLtjZMvWrIlTJAkwCQLkiqRhS2P63AXqfqQqkb/qs2RHc1zDQ==
   dependencies:
     "@ionic/cli-framework-output" "^2.2.5"
     "@ionic/utils-fs" "^3.1.6"
