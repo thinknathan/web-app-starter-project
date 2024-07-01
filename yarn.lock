@@ -1019,9 +1019,9 @@
     tslib "^2.1.0"
 
 "@capacitor/preferences@^5.0.4":
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-5.0.7.tgz#a24c5a0b82fc5d07455b1a18cd8a28cc173f976e"
-  integrity sha512-JvfGP1m8nITWEFdBpKR9HXNeBjLKwO0q1pry7Z5lYrYmCrbyRBLWzaGZGll8py4KmGWL3F5+PZvhrpT4gPoeAQ==
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-5.0.8.tgz#46ba54432d7c5b248b7a91736c9718a6b736198f"
+  integrity sha512-zzz8JC2NuZ+xdBP2Cfhu4uyRUMAFoxMl7l8w5ahQPzckyt7Fk/pWATXj6IcTm7DzbsKc8ryXSsYTkv9ZL3Pfmw==
 
 "@capacitor/splash-screen@^5.0.4":
   version "5.0.7"
