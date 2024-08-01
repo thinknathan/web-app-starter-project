@@ -966,9 +966,9 @@
     to-fast-properties "^2.0.0"
 
 "@capacitor/android@^5.0.5":
-  version "5.7.6"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.7.6.tgz#334fc4118f953f31dc3fb3d4dcbbcd0a584bc0b7"
-  integrity sha512-oOavLrvdB5JcMMrvV7a086/4gpDuCTkesUlcw/JOA6ByMuZGEVZ5jFkXtGNIS+nw+b+FAj5SbordtkMW3ghhBQ==
+  version "5.7.7"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.7.7.tgz#5078555e3f90fc0994f7c63bfd11aa564b0982c6"
+  integrity sha512-gkc8p0jjbRHu5oxKvWQV1d6zRHNeK7/GQUHOL9J6yQqnnttLDf1tSZ4BVjicMdyKlxUailuBcboWvng+KYilvQ==
 
 "@capacitor/assets@^3.0.1":
   version "3.0.5"
@@ -6750,11 +6750,6 @@ pend@~1.2.0:
   integrity sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==
 
 picocolors@^1.0.0, picocolors@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.1.tgz#a8ad579b571952f0e5d25892de5445bcfe25aaa1"
-  integrity sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==
-
-picocolors@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.1.tgz#a8ad579b571952f0e5d25892de5445bcfe25aaa1"
   integrity sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==
