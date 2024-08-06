@@ -68,7 +68,7 @@
 		"esbuild-ifdef": "~0.2.0",
 		"esbuild-plugin-inline-worker": "~0.1.1",
 		"esbuild-style-plugin": "^1.6.2",
-		"eslint": "^8.56.0",
+		"eslint": "^9.0.0",
 		"globals": "*",
 		"husky": "^9.0.11",
 		"icon-gen": "^4.0.0",
@@ -80,7 +80,7 @@
 		"rimraf": "^5.0.1",
 		"ts-reset": "^0.0.1",
 		"typescript": "~5.4.2",
-		"typescript-eslint": "^7.6.0",
+		"typescript-eslint": "^8.0.0",
 		"workbox-cli": "^7.0.0"
 	},
 	"resolutions": {

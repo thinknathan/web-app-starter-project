@@ -96,7 +96,7 @@ export const createWindow = async (settings: {
 		// Launch web tools.
 		mainWindow.webContents.once('dom-ready', () => {
 			setTimeout(() => {
-				// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-call
+				// eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-unsafe-call
 				require('electron-debug')();
 				mainWindow.webContents.openDevTools();
 			}, 0);
