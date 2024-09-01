@@ -2981,7 +2981,7 @@ cheerio-select@^2.1.0:
     domhandler "^5.0.3"
     domutils "^3.0.1"
 
-cheerio@^1.0.0-rc.12:
+cheerio@1.0.0-rc.12:
   version "1.0.0-rc.12"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.12.tgz#788bf7466506b1c6bf5fae51d24a2c4d62e47683"
   integrity sha512-VqR8m68vM46BNnuZ5NtnGBKIE/DfN0cRIzg9n40EIq9NOv90ayxLBXA8fXC5gquFRGJSTRqBq25Jt2ECLR431Q==
@@ -7269,12 +7269,12 @@ puppeteer-core@^13.5.2:
     ws "8.5.0"
 
 pwa-asset-generator@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/pwa-asset-generator/-/pwa-asset-generator-6.3.1.tgz#42a47dbac058432d08c24cd569afe565d1d14edb"
-  integrity sha512-iGbUvBH1T+yysr/31OsJyIbqrDUPOHZPOvCODgQmiBkbfALxF9Wqmzc9ddYYe0x07/qAurc54IAt4rDR+vaQDQ==
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/pwa-asset-generator/-/pwa-asset-generator-6.3.2.tgz#e4ed72938dc18d6bf00ca1e3cb287b380b490c13"
+  integrity sha512-mLdzO3+R79/t/j0Ng6thZR8JDsJug/4jAXeOpgV40uEQb0ZSOFT6d6AYsSCRs0Y4eI8ywjnrkXgz/qxbVLvXJw==
   dependencies:
     chalk "^4.1.2"
-    cheerio "^1.0.0-rc.12"
+    cheerio "1.0.0-rc.12"
     chrome-launcher "^0.15.0"
     find-process "^1.4.7"
     lodash.isequal "^4.5.0"
