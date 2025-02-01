@@ -64,7 +64,7 @@
 		"electron": "^22.3.27",
 		"electron-builder": "^24.4.0",
 		"electron-debug": "^3.2.0",
-		"esbuild": "~0.19.0",
+		"esbuild": "~0.24.0",
 		"esbuild-ifdef": "~0.2.0",
 		"esbuild-plugin-inline-worker": "~0.1.1",
 		"esbuild-style-plugin": "^1.6.2",
@@ -77,14 +77,14 @@
 		"postcss-preset-env": "^9.2.0",
 		"prettier": "^3.1.1",
 		"pwa-asset-generator": "^6.3.1",
-		"rimraf": "^5.0.1",
+		"rimraf": "^6.0.1",
 		"ts-reset": "^0.0.1",
-		"typescript": "~5.4.2",
+		"typescript": "~5.7.2",
 		"typescript-eslint": "^8.0.0",
 		"workbox-cli": "^7.0.0"
 	},
 	"resolutions": {
-		"esbuild": "~0.19.0",
-		"typescript": "~5.4.2"
+		"esbuild": "~0.24.0",
+		"typescript": "~5.7.2"
 	}
 }
