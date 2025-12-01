@@ -62,7 +62,7 @@ jobs:
           keyPassword: ${{ secrets.RELEASE_KEYSTORE_ALIAS_PASSWORD }}
 
       - name: Upload release APK/AAB
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: app-release
           path: |
